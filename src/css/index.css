@@ -1,0 +1,40 @@
+/* 头部输入框 */
+#header{
+    width:100%;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+/* 整个盒子 */
+#header .inputBox{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    background-color: rgba(201,21,35,0.85);
+    position: relative;
+    min-width: 320px;
+    max-width: 640px;
+    padding-left: 65px;
+}
+#header .inputBox .inputclass{
+    height: 30px;
+    border-radius: 15px;
+}
+#header .inputBox .icon_search{
+    background-position: 25px -103px;
+    position: absolute;
+background-color: black;
+    width: 60px;
+    height: 36px; 
+}
+#header .inputBox .icon_jd{
+    background-position: 0px -103px;
+    position: absolute;
+    left: 5px;
+    top:5px;
+    width: 60px;
+    height: 36px;
+}
