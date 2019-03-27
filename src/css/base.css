@@ -1,0 +1,57 @@
+/* reset */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    /* 移动端链接 */
+    -webkit-tap-highlight-color: none;
+}
+a{
+    text-decoration: none;
+
+}
+
+input{
+    border: none;
+    -webkit-appearance: none;
+}
+u,li{
+    list-style: none;
+}
+
+/* common.css */
+#header{
+    width:100%;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+#header #inputBox{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    background-color: rgba(201,21,35,0.85);
+    position: relative;
+    min-width: 320px;
+    max-width: 640px;
+}
+#header #inputBox .icon_jd{
+    background-position: 0px -105px;
+    position: absolute;
+    left: 5px;
+    top:5px;
+    width: 60px;
+    height: 36px;
+}
+
+[class^="icon_"],[class*=" icon_"]{
+    content:"";
+    background-repeat: no-repeat;
+    background-image: url("../images/sprites.png");
+    background-size:200px 200px
+
+}
