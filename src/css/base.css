@@ -4,6 +4,7 @@
 *::before{
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     /* 移动端高亮清除 */
@@ -23,6 +24,18 @@ input,textarea{
     outline:none;
     border: none;
     resize: none;
+=======
+    /* 移动端链接 */
+    -webkit-tap-highlight-color: none;
+}
+a{
+    text-decoration: none;
+
+}
+
+input{
+    border: none;
+>>>>>>> 4b3712513d6d8f47bdfcbb841eb0daa89eeefc8b
     -webkit-appearance: none;
 }
 u,li{
