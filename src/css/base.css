@@ -1,0 +1,40 @@
+/* reset */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* 移动端高亮清除 */
+    /* tap-highlight-color: none; */
+    -webkit-tap-highlight-color: none;
+}
+body{
+    font-size: 14px;
+    color: #ccc;
+    font-family: "Microsoft YaHei",sans-serif;
+}
+a{
+    text-decoration: none;  /* 下划线 */
+    color: #ccc;
+}
+input,textarea{
+    outline:none;
+    border: none;
+    resize: none;
+    -webkit-appearance: none;
+}
+u,li{
+    list-style: none;
+}
+
+/* common.css */
+
+[class^="icon_"],[class*=" icon_"]{
+    content:"";
+    background-repeat: no-repeat;
+    background-image: url("../images/sprites.png");
+    background-size:200px 200px
+
+}
