@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* container 部分 */
 #container{
     min-width: 320px;
@@ -7,8 +6,6 @@
     margin: 0 auto;
 }
 
-=======
->>>>>>> 4b3712513d6d8f47bdfcbb841eb0daa89eeefc8b
 /* 头部输入框 */
 #header{
     width:100%;
@@ -18,13 +15,8 @@
     top: 0;
     z-index: 1000;
 }
-<<<<<<< HEAD
 #header .inputBox{
     /* 整个盒子 */
-=======
-/* 整个盒子 */
-#header .inputBox{
->>>>>>> 4b3712513d6d8f47bdfcbb841eb0daa89eeefc8b
     width: 100%;
     height: 40px;
     line-height: 40px;
@@ -34,7 +26,6 @@
     min-width: 320px;
     max-width: 640px;
     padding-left: 65px;
-<<<<<<< HEAD
     padding-right: 55px;
     /* float: left; */
 }
@@ -82,30 +73,31 @@
 
 
 /* container 轮播图 */
-.mainBox{
+.PicInturn{
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin-bottom: 10px;
 }
-.mainBox ul:first-child{
+.PicInturn ul:first-child{
     width: 1000%;
     transform: translateX(-10%);
     -webkit-transform: translateX(-10%);
 }
-.mainBox ul:first-child li{
+.PicInturn ul:first-child li{
     width: 10%;
     float: left;
 }
-.mainBox ul:first-child li a{
+.PicInturn ul:first-child li a{
     display: block;
     width: 100%;
 }
-.mainBox ul:first-child li img{
+.PicInturn ul:first-child li img{
     display: block;
     width: 100%;
 }
 /* 轮播图选中圈 */
-.mainBox ul:last-child{
+.PicInturn ul:last-child{
     width: 120;
     height: 8px;
     position: absolute;
@@ -114,7 +106,7 @@
     margin-left: -60px;
 }
     
-.mainBox ul:last-child li{
+.PicInturn ul:last-child li{
     float: left;
     width: 8px;
     height: 8px;
@@ -123,30 +115,9 @@
     border: 1px solid #fff;
     margin-left: 4px;
 }
-.mainBox ul:last-child li.selected{
+.PicInturn ul:last-child li.selected{
     background-color: #fff;
 }
-.mainBox ul:last-child li:first-child{
+.PicInturn ul:last-child li:first-child{
     margin-left:2;
-=======
-}
-#header .inputBox .inputclass{
-    height: 30px;
-    border-radius: 15px;
-}
-#header .inputBox .icon_search{
-    background-position: 25px -103px;
-    position: absolute;
-background-color: black;
-    width: 60px;
-    height: 36px; 
-}
-#header .inputBox .icon_jd{
-    background-position: 0px -103px;
-    position: absolute;
-    left: 5px;
-    top:5px;
-    width: 60px;
-    height: 36px;
->>>>>>> 4b3712513d6d8f47bdfcbb841eb0daa89eeefc8b
 }

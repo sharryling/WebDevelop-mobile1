@@ -4,7 +4,6 @@
 *::before{
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     /* 移动端高亮清除 */
@@ -24,18 +23,6 @@ input,textarea{
     outline:none;
     border: none;
     resize: none;
-=======
-    /* 移动端链接 */
-    -webkit-tap-highlight-color: none;
-}
-a{
-    text-decoration: none;
-
-}
-
-input{
-    border: none;
->>>>>>> 4b3712513d6d8f47bdfcbb841eb0daa89eeefc8b
     -webkit-appearance: none;
 }
 u,li{
@@ -43,6 +30,35 @@ u,li{
 }
 
 /* common.css */
+.clearFix::after,
+.clearFix::before{
+    content: "";
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+}
+
+.ml_10{
+    margin-left: 10px;
+}
+.mr_10{
+    margin-right: 10px;
+}
+.mt_10{
+    margin-top: 10px;
+}
+.mb_10{
+    margin-bottom: 10px;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
 
 [class^="icon_"],[class*=" icon_"]{
     content:"";
