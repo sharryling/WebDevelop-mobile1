@@ -1,4 +1,4 @@
-/* reset css */
+/*=======reset css=======*/
 body{
     font-size: 14px;
     font-family: 'Microsoft YaHei',sans-serif;
@@ -9,11 +9,83 @@ body{
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
 }
-a{
+a,
+a:hover,
+a:focus{
     text-decoration: none;
     color: #ccc;
 }
-/* model css */
+
+/* 字体图标 自定义 */
+@font-face{
+    font-family: 'wjs';
+    src: 
+    url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../fonts/MiFie-Web-Font.svg') format('svg'),
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
+    url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+.wjs_icon{
+    font-family: 'wjs';
+}
+.wjs_icon_phone::before{
+    content: "\e908";
+}
+/*=======model css=======*/
+.wjs_topBar{
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+.wjs_topBar .container{
+    /* height: 100%;
+    border: 1px solid #ccc; */
+}
+.wjs_topBar .container .row{
+   /*  border: 1px solid #ccc; */
+}
+.wjs_topBar .container .row div{
+    height: 40px;
+    border-left: 1px solid #ccc;
+    line-height: 40px;
+    text-align: center;
+ }
+ .wjs_topBar .container .row div:first-child{
+    border-left: none;
+ }
+ .wjs_app{
+     display: block;
+     position: relative;
+ }
+.wjs_app img{
+    display:none;
+}
+.wjs_app:hover img{
+    display:block;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1000000;
+}
+.wjs_topBar .btn-register,
+.btn-register:hover,
+.btn-register:visited{
+    padding: 3px;
+    font-size: 14px;
+    background-color: rgb(170, 50, 50);
+    color: #fff;
+    margin-right: 5px;
+}
+
+
+.wjs_nav{}
+.wjs_banner{}
+.wjs_info{}
+.wjs_book{}
+.wjs_product{}
+.wjs_news{}
+.wjs_partner{}
+
 
