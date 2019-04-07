@@ -1,0 +1,19 @@
+/* reset css */
+body{
+    font-size: 14px;
+    font-family: 'Microsoft YaHei',sans-serif;
+    color: #ccc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+/* model css */
+
