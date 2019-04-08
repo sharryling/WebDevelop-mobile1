@@ -2,115 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./src/css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./src/css/index.css">
 </head>
 
 <body>
-    <!-- 顶部通栏 -->
-    <header class="wjs_topBar hidden-sm hidden-xs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <a href="#" class="wjs_app">
-                        <span class="wjs_icon wjs_icon_phone"></span>
-                        <span>手机微金所</span>
-                        <span class="glyphicon glyphicon-menu-down"></span>
-                        <img src="./src/images/code.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-5">
-                    <span></span>
-                    <span>4006-89-4006(服务时间09:00-16:00)</span>
-                </div>
-                <div class="col-md-2">
-                    <a href="#">常见问题</a>
-                    <a href="#">财富登录</a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#" class="btn btn-default btn-register">免费注册</a>
-                    <a href="#">登录</a>
-                </div>
-            </div>
+  <!-- 顶部通栏 -->
+  <header class="wjs_topBar hidden-sm hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="#" class="wjs_app">
+            <span class="wjs_icon wjs_icon_phone"></span>
+            <span>手机微金所</span>
+            <span class="glyphicon glyphicon-menu-down"></span>
+            <img src="./src/images/code.jpg" alt="">
+          </a>
         </div>
-    </header>
-    <!-- 导航栏 -->
-    <nav class="wjs_nav">
-            <nav class="navbar navbar-default">
-                    <div class="container">
-                      <!-- Brand and toggle get grouped for better mobile display -->
-                      <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Brand</a>
-                      </div>
-                  
-                      <!-- Collect the nav links, forms, and other content for toggling -->
-                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                          <li><a href="#">Link</a></li>
-                          <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Another action</a></li>
-                              <li><a href="#">Something else here</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">One more separated link</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                        <form class="navbar-form navbar-left">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                          </div>
-                          <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-                        <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#">Link</a></li>
-                          <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Another action</a></li>
-                              <li><a href="#">Something else here</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                  </nav>
-    </nav>
-    <!-- 轮播图 -->
-    <section class="wjs_banner"></section>
-    <!-- 信息 -->
-    <section class="wjs_info"></section>
-    <!-- 预约 -->
-    <section class="wjs_book"></section>
-    <!-- 产品 -->
-    <section class="wjs_product"></section>
-    <!-- 新闻 -->
-    <section class="wjs_news"></section>
-    <!-- 合作伙伴 -->
-    <footer class="wjs_partner"></footer>
+        <div class="col-md-5">
+          <span>4006-89-4006(服务时间09:00-16:00)</span>
+        </div>
+        <div class="col-md-2">
+          <a href="#">常见问题</a>
+          <a href="#">财富登录</a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="btn btn-default btn-register">免费注册</a>
+          <a href="#">登录</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 导航栏 -->
+  <nav class="navbar wjs_nav">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- 切换 -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <span class="wjs_icon wjs_icon_logo"></span>
+          <span class="wjs_icon wjs_icon_name"></span></a>
+      </div>
+      <!-- brand -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">我要投资</a></li>
+          <li><a href="#">我要借贷</a></li>
+          <li><a href="#">我要借贷</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">微平台</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">个人中心</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- 轮播图 -->
+  <section class="wjs_banner">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
 
-    <!-- bootstrap 依赖 jQuery，所以要把jQuery的引入放在bootstrap的前面 -->
-    <script src="./lib/jquery/jQuery.min.js"></script>
-    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./src/js/index.js"></script>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+          <div class="item active">
+              <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(./src/images/slide_01_2000x410.jpg)"></a>
+              <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="./src/images/slide_01_640x340.jpg" alt=""></a>
+          </div>
+          <div class="item">
+              <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(./src/images/slide_02_2000x410.jpg)"></a>
+              <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="./src/images/slide_02_640x340.jpg" alt=""></a>
+          </div>
+          <div class="item">
+              <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(./src/images/slide_03_2000x410.jpg)"></a>
+              <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="./src/images/slide_03_640x340.jpg" alt=""></a>
+          </div>
+          <div class="item">
+              <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(./src/images/slide_04_2000x410.jpg)"></a>
+              <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="./src/images/slide_04_640x340.jpg" alt=""></a>
+          </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic"  data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </section>
+  <!-- 信息 -->
+  <section class="wjs_info"></section>
+  <!-- 预约 -->
+  <section class="wjs_book"></section>
+  <!-- 产品 -->
+  <section class="wjs_product"></section>
+  <!-- 新闻 -->
+  <section class="wjs_news"></section>
+  <!-- 合作伙伴 -->
+  <footer class="wjs_partner"></footer>
+
+  <!-- bootstrap 依赖 jQuery，所以要把jQuery的引入放在bootstrap的前面 -->
+  <script src="./lib/jquery/jQuery.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./src/js/index.js"></script>
 </body>
 
 </html>
