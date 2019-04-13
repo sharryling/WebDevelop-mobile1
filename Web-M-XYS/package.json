@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "art-template": "^4.13.2"
+    "art-template": "file:node_modules/art-template"
   },
   "devDependencies": {},
   "scripts": {
