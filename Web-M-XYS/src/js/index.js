@@ -1,8 +1,11 @@
 $(function () {
     $.ajax({
         type:'get',
-        url:'http://127.0.0.1:3001/',
+        url:'http://localhost:8081/list_user',
         dataType:'json',
+        xhrFields: {
+            withCredentials: true
+        },
         success:function(data){
             console.log("data:",data);
         },
@@ -11,3 +14,6 @@ $(function () {
         }
     })
 });
+
+/* var dom = document.getElementsByTagName('*')
+console.log('dom=',dom) */

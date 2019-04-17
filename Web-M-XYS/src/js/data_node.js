@@ -1,4 +1,4 @@
-const http = require('http')
+/* const http = require('http')
 //const fs = require('fs')
 var data =[{
     pcUrl:"../images/slide_01_2000x410.jpg",
@@ -29,4 +29,11 @@ server.on('request',()=>{
 //监听端口号
 server.listen(3001,function(){
     
-});
+}); */
+
+const express = require('express')
+const app = express()
+
+app.get('/', (req, res) => res.send('Hello World!'))
+
+app.listen(3000, () => console.log('Example app listening on port 3000!'))
