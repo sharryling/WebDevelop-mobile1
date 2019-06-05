@@ -1,0 +1,5 @@
+{
+    "code":0,
+    "msg": "查询成功", 
+    "res": [{"channel": 0, "temp_value": "17.1", "timeStamp": 1436362683345}]
+}

@@ -15,7 +15,7 @@ var path = require('path')
 var fs = require('fs')
 fs.readFile("./src/data.json")
 var file = path.join(__dirname, 'src/data.json'); 
-
+var tempFile = path.join(__dirname, 'src/temp.json'); 
 //  主页输出 "Hello World"
 app.get('/', function (req, res) {
     console.log("主页 GET 请求");
@@ -29,7 +29,7 @@ app.post('/', function (req, res) {
 })
 
 //  /del_user 页面响应
-app.get('/del_user', function (req, res) {
+/* app.get('/del_user', function (req, res) {
     console.log("/del_user 响应 DELETE 请求");
     if (req.session.sign) {//检查用户是否已经登录
         console.log(req.session);//打印session的值
@@ -39,7 +39,7 @@ app.get('/del_user', function (req, res) {
         req.session.name = '汇智网';
         res.end('欢迎登陆！');
     }
-})
+}) */
 
 //  /list_user 页面 GET 请求
 app.get('/list_user', function (req, res) {
@@ -58,7 +58,55 @@ app.get('/list_user', function (req, res) {
     });
     
 })
+var fsJSON = {};
+fs.readFile(tempFile,(err,data)=>{
+    if(err)console.err(err)
+    else{
+        
+        fsJSON = JSON.parse(data.toString());
+    }
+})
 
+app.get('/temperature',(req,res)=>{
+    console.log(fsJSON)
+    res.set({
+        'Content-Type':'application/json',
+        'Access-Control-Allow-Origin':'*'
+    })
+    //var obj = JSON.parse(data.toString())
+    fsJSON.res[0].timeStamp=new Date().getTime()
+    fsJSON.res[0].temp_value = Math.floor(Math.random()*5)+20
+    //console.log(obj)
+    //data.res[0].temp_value++
+    //res.end(`${req.query.callback}(${data.toString()})`)
+    res.end(JSON.stringify(fsJSON))
+    /* res.set({
+        'Content-Type':'application/json',
+        'Access-Control-Allow-Origin':'*'
+    })
+    res.end({
+        code:0,
+        msg: "查询成功", 
+        res: [{channel: 0, temp_value: "23.1", timeStamp: 1547813809485}]
+    }.toString()) */
+})
+
+
+app.get('/TestJsonp',(req,res)=>{
+    console.log(req.query.callback);
+    fs.readFile(file,(err,data)=>{
+        if(err)console.err(err)
+        else{
+            res.set({
+                'Content-Type':'application/json',
+                'Access-Control-Allow-Origin':'*'
+            })
+            //res.end(`${req.query.callback}(${data.toString()})`)
+            res.end(data.toString())
+        }
+    })
+    
+})
 /* // 对页面 abcd, abxcd, ab123cd, 等响应 GET 请求
 app.get('/ab*cd', function (req, res) {
     console.log("/ab*cd GET 请求");
